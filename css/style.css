@@ -10,6 +10,12 @@ html {
 }
 
 /* ================= Global Styles ================= */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 h1 {
   font-size: 3.125rem;
   line-height: 4rem;
@@ -41,4 +47,47 @@ p {
 }
 body {
   width: 100%;
+}
+
+/* ================ Header Section =================== */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 5rem;
+  background-color: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  padding-inline: 1.25rem;
+  position: relative;
+}
+#navbar li a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: color 0.3s ease;
+}
+#navbar li a.active,
+#navbar li a:hover {
+  color: #088178;
+}
+#navbar li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  transition: width 0.3s ease-in;
+}
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  width: 40%;
 }
