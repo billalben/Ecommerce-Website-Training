@@ -70,6 +70,18 @@ p {
 .section-m1 {
   margin: 2.5rem 0;
 }
+button.normal {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 body {
   width: 100%;
 }
@@ -208,7 +220,7 @@ body {
   background-color: #fff2e5;
 }
 
-/* Featured Products Section  */
+/* ================== Featured Products Section  ====================== */
 #product1 {
   padding-block: 2.5rem;
 }
@@ -272,4 +284,37 @@ body {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+}
+
+/* ================== Banner Section  ====================== */
+#banner {
+  margin-block: 3rem;
+
+  text-align: center;
+  background-image: url("../imgs/banner/b2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.banner-container {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-container h4 {
+  color: #fff;
+  font-size: 1rem;
+}
+.banner-container h2 {
+  color: #fff;
+  font-size: 1rem;
+  padding-block: 0.625rem;
+}
+.banner-container h2 span {
+  color: #ef3636;
+}
+.banner-container button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
