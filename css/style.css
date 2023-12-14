@@ -350,7 +350,7 @@ body {
   padding-left: 3rem;
   height: 40vh;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   border-radius: 0.825rem;
 }
 .sm-banner-container .first-banner .banner-box:nth-child(1) {
@@ -404,4 +404,50 @@ body {
   color: #b0241f;
   font-weight: 800;
   font-size: 1rem;
+}
+
+/* ================== Newsletter Section ================== */
+#newsletter {
+  background-image: url("../imgs/banner/b14.png");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+.newsletter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 3rem;
+}
+.newsletter-container h4 {
+  font-size: 1.325rem;
+  font-weight: 700;
+  color: #fff;
+}
+.newsletter-container p {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.newsletter-container p span {
+  color: #ffbd27;
+}
+.newsletter-container .form {
+  display: flex;
+}
+.newsletter-container .form input {
+  height: 3.125rem;
+  padding-inline: 1.25rem;
+  font-size: 0.925rem;
+  width: 100%;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.newsletter-container .form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 0 0.25rem 0.25rem 0;
 }
