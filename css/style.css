@@ -4,6 +4,9 @@
   --bg-color: #e3e6f3;
   --primary-color: #088178;
   --paragraph-color: #465b52;
+
+  --padding-section: 4rem;
+  --margin-section: 4rem;
 }
 * {
   margin: 0;
@@ -63,6 +66,10 @@ p {
   font-size: 1rem;
   color: var(--paragraph-color);
   margin: 0.9375rem 0 1.25rem 0;
+}
+button {
+  border: none;
+  cursor: pointer;
 }
 .section-p1 {
   padding: 2.5rem 5rem;
@@ -146,6 +153,17 @@ body {
 #navbar li a.active::after {
   width: 40%;
 }
+#mobile {
+  display: none;
+}
+#mobile i {
+  font-size: 1.625rem;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+#close {
+  display: none;
+}
 
 /* ================ Home Section =================== */
 #hero {
@@ -182,7 +200,7 @@ body {
 
 /* ================== Feature Section ================== */
 #feature {
-  padding-block: 4rem;
+  padding-block: var(--padding-section);
 }
 .feature-container {
   display: grid;
@@ -234,7 +252,7 @@ body {
 
 /* ================== Featured Products Section  ====================== */
 #product1 {
-  padding-block: 2.5rem;
+  padding-block: var(--padding-section);
 }
 #product1 .product-header {
   text-align: center;
@@ -300,7 +318,7 @@ body {
 
 /* ================== Banner Section  ====================== */
 #banner {
-  margin-block: 3rem;
+  margin-block: var(--margin-section);
 
   text-align: center;
   background-image: url("../imgs/banner/b2.jpg");
@@ -333,7 +351,7 @@ body {
 
 /* ================== Small Banner Section ================== */
 #sm-banner {
-  margin-block: 2rem;
+  margin-block: var(--margin-section);
 }
 /* first banner */
 .sm-banner-container .first-banner {
@@ -501,4 +519,98 @@ body {
   text-align: center;
   color: var(--paragraph-color);
   font-size: 0.875rem;
+}
+
+/* Media Query */
+@media (max-width: 767px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--bg-color);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 5rem 0 0 0.625rem;
+    transition: right 0.4s ease;
+  }
+  #navbar.active {
+    right: 0;
+  }
+  .header-container {
+    padding-inline: 2rem;
+  }
+  #navbar li {
+    margin-bottom: 1.625rem;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 1.6rem;
+  }
+  #close i {
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+  }
+
+  #hero {
+    background-position: top 30% right 30%;
+  }
+
+  .sm-banner-container .first-banner {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --padding-section: 2rem;
+    --margin-section: 2rem;
+  }
+  .hero-container h4 {
+    padding-bottom: 0.825rem;
+  }
+  h4 {
+    font-size: 0.925rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  p {
+    font-size: 0.725rem;
+    margin: 0.9375rem 0 1.25rem 0;
+  }
+
+  .banner-container {
+    height: 30vh;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer .copyright {
+    padding-block: 0.925rem;
+    font-size: 0.675rem;
+  }
 }
