@@ -521,6 +521,36 @@ body {
   font-size: 0.875rem;
 }
 
+/* ================== Shop Page ================== */
+#page-header {
+  background-image: url("../imgs/banner/b1.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+}
+.page__header-container {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page__header-container h2,
+.page__header-container p {
+  color: #fff;
+}
+#pagination {
+  padding-top: 4rem;
+  text-align: center;
+}
+#pagination a {
+  background-color: var(--primary-color);
+  padding: 1rem 1.25rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.275rem;
+}
+
 /* Media Query */
 @media (max-width: 767px) {
   #navbar {

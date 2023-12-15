@@ -22,4 +22,3 @@ document.addEventListener("click", (event) => {
     nav.classList.remove("active");
   }
 });
-
