@@ -664,6 +664,11 @@ body {
   .footer-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  .product-details__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -700,5 +705,9 @@ body {
   .footer .copyright {
     padding-block: 0.925rem;
     font-size: 0.675rem;
+  }
+
+  .product-details__container {
+    grid-template-columns: 1fr;
   }
 }
