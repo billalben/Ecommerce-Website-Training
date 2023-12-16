@@ -848,6 +848,46 @@ marquee {
   padding-top: 1rem;
 }
 
+/* =============== Cart Add Section ============== */
+.cart-add__container {
+  padding-block: var(--padding-section);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.cart-add__container #coupon h3,
+.cart-add__container #subtotal h3 {
+  padding-bottom: 1rem;
+}
+.cart-add__container #coupon input {
+  padding: 0.625rem 1.25rem;
+  outline: none;
+  max-width: 60%;
+  margin-right: 0.625rem;
+  border: 1px solid #e2e9e1;
+}
+.cart-add__container #coupon button,
+.cart-add__container #subtotal button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+}
+.cart-add__container #subtotal {
+  border: 1px solid #e2e9e1;
+  padding: 2rem;
+}
+.cart-add__container #subtotal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+}
+.cart-add__container #subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 0.925rem;
+  font-size: 0.825rem;
+}
+
 /* Media Query */
 @media (max-width: 767px) {
   #navbar {
@@ -924,6 +964,14 @@ marquee {
   }
   .form-details__container .people div {
     justify-content: flex-start;
+  }
+
+  #coupon {
+    padding: 2rem;
+  }
+  .cart-add__container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
