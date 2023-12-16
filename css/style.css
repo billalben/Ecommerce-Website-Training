@@ -610,9 +610,6 @@ body {
 }
 #page-header.blog-header {
   background-image: url("../imgs/banner/b19.jpg");
-  width: 100%;
-  background-size: cover;
-  background-position: top 25% right 0;
 }
 .blog-container {
   padding-block: var(--padding-section);
@@ -664,6 +661,25 @@ body {
   font-size: 4rem;
   font-weight: 700;
   color: #c9cbce;
+}
+
+/* ================== About Page ================== */
+#page-header.about-header {
+  background-image: url("../imgs/about/banner.png");
+}
+.about-container {
+  padding-block: var(--padding-section);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+.about-container img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+marquee {
+  background-color: #ccc;
 }
 
 /* Media Query */
