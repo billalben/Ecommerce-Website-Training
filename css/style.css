@@ -580,11 +580,11 @@ body {
 .single-pro-details select {
   display: block;
   padding: 0.675rem 1rem;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
   background-color: var(--primary-color);
   color: #fff;
   border: none;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 .single-pro-details input {
   width: 4rem;
@@ -602,6 +602,68 @@ body {
 }
 .single-pro-details span {
   line-height: 1.625rem;
+}
+
+/* ================== Blog Page ================== */
+#blog {
+  margin-top: var(--margin-section);
+}
+#page-header.blog-header {
+  background-image: url("../imgs/banner/b19.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+}
+.blog-container {
+  padding-block: var(--padding-section);
+}
+.blog-container .blog-box {
+  display: grid;
+  grid-template-columns: 6fr 7fr;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.blog-container .blog-box:not(:last-child) {
+  margin-bottom: 5rem;
+  border-bottom: 1px solid var(--bg-color);
+}
+.blog-container .blog-box .blog-img img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.blog-container .blog-box .blog-details a {
+  font-size: 0.775rem;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+}
+.blog-container .blog-box .blog-details a:hover {
+  color: var(--primary-color);
+}
+.blog-container .blog-box .blog-details a:hover::after {
+  background-color: var(--primary-color);
+}
+.blog-container .blog-box .blog-details a::after {
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 0.325rem;
+  right: -6rem;
+}
+.blog-container .blog-box h1 {
+  position: absolute;
+  top: -2.5rem;
+  z-index: -1;
+  left: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #c9cbce;
 }
 
 /* Media Query */
