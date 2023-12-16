@@ -682,6 +682,17 @@ marquee {
   background-color: #ccc;
 }
 
+/* ================== About App Section ================== */
+.about-app__container {
+  text-align: center;
+}
+.about-app__container video {
+  max-width: 70%;
+  height: 100%;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
 /* Media Query */
 @media (max-width: 767px) {
   #navbar {
