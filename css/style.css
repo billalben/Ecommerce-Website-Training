@@ -808,4 +808,8 @@ marquee {
     font-size: 2rem;
     top: -1.75rem;
   }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
 }
