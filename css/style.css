@@ -709,7 +709,7 @@ marquee {
 }
 .form-details__container form span,
 .contact-details__container .details span {
-  font-size: .725rem;
+  font-size: 0.725rem;
 }
 .form-details__container form h2,
 .contact-details__container .details h2 {
@@ -794,6 +794,60 @@ marquee {
   color: #000;
 }
 
+/* =============== Cart Page ============== */
+.cart-container {
+  padding-block: var(--padding-section);
+  overflow-x: auto;
+}
+.cart-container table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+.cart-container table img {
+  max-width: 70px;
+}
+.cart-container table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+.cart-container table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+.cart-container table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+.cart-container table td:nth-child(4),
+.cart-container table td:nth-child(5),
+.cart-container table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+.cart-container table tbody td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+.cart-container table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+.cart-container table thead td {
+  font-size: 0.925rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.125rem 0;
+}
+.cart-container table tbody tr {
+  font-size: 0.875rem;
+}
+.cart-container table tbody tr td {
+  padding-top: 1rem;
+}
+
 /* Media Query */
 @media (max-width: 767px) {
   #navbar {
@@ -870,6 +924,7 @@ marquee {
   }
   .form-details__container .people div {
     justify-content: flex-start;
+  }
 }
 
 @media (max-width: 576px) {
