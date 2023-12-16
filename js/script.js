@@ -22,3 +22,31 @@ document.addEventListener("click", (event) => {
     nav.classList.remove("active");
   }
 });
+
+// ================= change image in product details
+const mainImg = document.querySelector("#mainImg");
+const smallImg = document.querySelectorAll(".small-img");
+
+smallImg.forEach((small) => {
+  small.addEventListener("click", (event) => {
+    const img = event.target.src;
+    mainImg.src = img;
+  });
+});
+
+// go to the product page
+const products = document.querySelectorAll(".product-container .pro");
+
+products.forEach((product) => {
+  product.addEventListener("click", () => {
+    window.location.href = "product.html";
+  });
+});
+
+const cartBtns = document.querySelectorAll(".pro-cart");
+
+cartBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+});

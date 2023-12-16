@@ -433,7 +433,6 @@ body {
 }
 .newsletter-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-block: 3rem;
@@ -551,6 +550,60 @@ body {
   border-radius: 0.275rem;
 }
 
+/* ================== Product Details Section ================== */
+.product-details__container {
+  padding-block: var(--padding-section);
+  display: grid;
+  grid-template-columns: 6fr 7fr;
+  gap: 3rem;
+}
+.single-pro-image img {
+  border-radius: 1rem;
+}
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.small-img-col {
+  cursor: pointer;
+}
+.single-pro-details {
+  padding-block: var(--padding-section);
+}
+.single-pro-details h4 {
+  padding-block: 2rem 1.25rem;
+}
+.single-pro-details h2 {
+  font-size: 1.625rem;
+}
+.single-pro-details select {
+  display: block;
+  padding: 0.675rem 1rem;
+  margin-bottom: .625rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+}
+.single-pro-details input {
+  width: 4rem;
+  height: 2.875rem;
+  padding-left: 0.625rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.single-pro-details input:focus {
+  outline: none;
+}
+.single-pro-details button {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.single-pro-details span {
+  line-height: 1.625rem;
+}
+
 /* Media Query */
 @media (max-width: 767px) {
   #navbar {
@@ -593,6 +646,11 @@ body {
     width: 30px;
     height: 30px;
     line-height: 32px;
+  }
+
+  .newsletter-container {
+    flex-direction: column;
+    padding-block: 2rem;
   }
 
   #hero {
