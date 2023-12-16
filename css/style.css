@@ -864,6 +864,12 @@ marquee {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+
+  .form-details__container {
+    grid-template-columns: 1fr;
+  }
+  .form-details__container .people div {
+    justify-content: flex-start;
 }
 
 @media (max-width: 576px) {
